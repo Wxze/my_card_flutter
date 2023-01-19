@@ -22,9 +22,11 @@ class MyApp extends StatelessWidget {
               Text(
                 'Gabriel Jose',
                 style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
+                  fontFamily: 'Pacifico',
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               )
             ],
           ),
