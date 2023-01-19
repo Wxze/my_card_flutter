@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -26,19 +25,19 @@ class MyApp extends StatelessWidget {
                 'Gabriel Jose',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
-                  fontSize: 40,
+                  fontSize: 40.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(width: double.infinity),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
                   fontFamily: 'Source Sans Pro',
-                  fontSize: 25,
-                  color: Colors.white,
-                  // fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.teal.shade100,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
