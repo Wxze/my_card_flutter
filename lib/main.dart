@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
+              //Container(width: double.infinity),
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('assets/my_picture2.jpg'),
@@ -38,6 +39,29 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade100,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '+55 00 00000-0000',
+                      style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20),
+                    )
+                  ],
                 ),
               ),
             ],
