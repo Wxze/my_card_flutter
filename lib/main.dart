@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              //Container(width: double.infinity),
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('assets/my_picture2.jpg'),
@@ -41,50 +41,43 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+55 00 00000-0000',
-                      style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20),
-                    )
-                  ],
+              SizedBox(
+                height: 20,
+                width: 15,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'gabriel@email.com',
-                      style: TextStyle(
-                          color: Colors.teal.shade900,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20),
-                    )
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+55 16 99442-2442',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'gabrieljose528@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20),
+                  ),
                 ),
               ),
             ],
@@ -94,3 +87,23 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+// Row(
+//                   children: [
+//                     Icon(
+//                       Icons.mail,
+//                       color: Colors.teal,
+//                     ),
+//                     SizedBox(
+//                       width: 10,
+//                     ),
+//                     Text(
+//                       'gabriel@email.com',
+//                       style: TextStyle(
+//                           color: Colors.teal.shade900,
+//                           fontFamily: 'Source Sans Pro',
+//                           fontSize: 20),
+//                     )
+//                   ],
+//                 ),
